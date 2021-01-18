@@ -1,0 +1,57 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#home{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10rem;
+}
+#App h3{
+    color: rgb(64, 182, 103);
+    margin: 1.5rem;
+}
+#App{
+    /* background-color: rgb(163, 36, 36); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* justify-content: center; */
+    height: 100vh;
+    color:#EED;
+    /* flex-wrap: wrap; */
+}
+#App .month{
+    text-align: center;
+    margin: 2rem;
+}
+#App .months{
+    width: 20rem;
+    height: 15rem;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
+    grid-gap: 1rem;
+}
+#App .day{
+    background-color: rgb(163, 36, 36);
+}
+#App .d{
+    color: rgb(41, 189, 78);
+}
+#App .s{
+    color: rgb(204, 40, 34);
+}
+#App .back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: brown;
+}
+#App .back h3{
+    cursor: pointer;
+}

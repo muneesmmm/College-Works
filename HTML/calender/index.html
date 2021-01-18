@@ -1,0 +1,74 @@
+   <html>
+    <title>Calender</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="home">
+      <form method="get" onsubmit="return getYear()">
+        <h3>Enter Year To Display Calender</h3>
+        <input type="number" id="yr" required autofocus />
+        <button type="submit">Display</button>
+      </form>
+    </div>
+
+    <div id="App">
+      <div class=" back">
+          <h3 onclick="sh()">Back</h3>
+      </div>
+      <div class="back">
+          <h1 id="year"></h1>
+      </div>
+      <div class="month">
+        <h3>January</h3>
+        <div id="jan" class="months"></div>
+      </div>
+      <div class="month">
+        <h3>February</h3>
+        <div id="feb" class="months"></div>
+      </div>
+      <div class="month">
+        <h3>March</h3>
+        <div id="mar" class="months"></div>
+      </div>
+      <div class="month">
+        <h3>April</h3>
+        <div id="apr" class="months"></div>
+      </div>
+      <div class="month">
+        <h3>May</h3>
+        <div id="may" class="months"></div>
+      </div>
+      <div class="month">
+        <h3>June</h3>
+        <div id="jun" class="months"></div>
+      </div>
+      <div class="month">
+        <h3>July</h3>
+        <div id="jul" class="months"></div>
+      </div>
+      <div class="month">
+        <h3>Auguest</h3>
+        <div id="aug" class="months"></div>
+      </div>
+      <div class="month">
+        <h3>September</h3>s
+        <div id="sep" class="months"></div>
+      </div>
+      <div class="month">
+        <h3>October</h3>
+        <div id="oct" class="months"></div>
+      </div>
+      <div class="month">
+        <h3>November</h3>
+        <div id="nov" class="months"></div>
+      </div>
+      <div class="month">
+        <h3>December</h3>
+        <div id="dec" class="months"></div>
+      </div>
+    </div>
+
+    <script src="switch.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

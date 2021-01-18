@@ -1,0 +1,76 @@
+
+<html>
+<head><title>string objects</title>
+</head>
+
+<script type="text/javascript">
+function lng()
+{
+var str=(document.f1.t1.value);
+result=str.length
+document.f1.r1.value=result;
+}
+function upper()
+{
+var str=(document.f1.t1.value);
+result=str.toUpperCase()
+document.f1.r2.value=result;
+}
+function low()
+{
+var str=(document.f1.t1.value);
+result=str.toLowerCase()
+document.f1.r3.value=result;
+}
+function ch1()
+{
+var str=(document.f1.t1.value);
+p=parseInt(document.f1.p1.value);
+result=str.charAt(p)
+document.f1.r4.value=result;
+}
+function pos()
+{
+var str=(document.f1.t1.value);
+var ch=(document.f1.c.value)
+result=str.indexOf(ch)
+document.f1.r5.value=result;
+}
+function rep()
+{
+var str=(document.f1.t1.value);
+var s1=(document.f1.c1.value)
+var s2=(document.f1.c2.value)
+result=str.replace(s1,s2)
+document.f1.r6.value=result;
+}
+function sub()
+{
+var str=(document.f1.t1.value);
+o1=parseInt(document.f1.l1.value)
+o2=parseInt(document.f1.l2.value)
+result=str.substring(o1,o2)
+document.f1.r7.value=result;
+}
+</script>
+<body>
+<form name="f1">
+<table>
+<tr>
+<td colspan="2">Enter the string  :<input type="text" name="t1" style="width:360px"></td></tr>
+<tr><td>length of the string</td>
+<td><input type="button" value="length" onClick="lng()"><input type="text" name="r1" style="width:120px"></td></tr>
+<tr>
+<td>The string in uppercase is</td>
+<td><input type="button" value="upper" onClick="upper()"><input type="text" name="r2" style="width:120px"></td></tr>
+<tr><td>The character at the position <input type="text" name="p1" style="width:40px">  in the</td>
+<td><input type="button" value="char@pos" onClick="ch1()"><input type="text" name="r4" style="width:93px"></td></tr>
+<tr><td>The position the character <input type="text" name="c" style="width:40px">  in the string</td>
+<td><input type="button" value="Index" onClick="pos()"><input type="text" name="r5" style="width:120px"></td></tr>
+<tr><td><input type="text" name="c1" style="width:80px" placeholder="old">to<input type="text" name="c2" style="width:80px"placeholder="new">replaced string is</td>
+<td><input type="button" value="replace" onClick="rep()"><input type="text" name="r6" style="width:110px"></td></tr>
+<tr><td>substring of the string<input type="text" name="l1" style="width:40px" placeholder="index n">to<input type="text" name="l2" style="width:40px"placeholder="index n">is</td>
+<td><input type="button" value="sub str" onClick="sub()"><input type="text" name="r7" style="width:115px"></td></tr>
+</form>
+</body>
+</html>

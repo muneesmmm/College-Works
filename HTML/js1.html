@@ -1,0 +1,73 @@
+<html>
+<script type="text/javascript">
+function rnd()
+{
+a=parseFloat(document.f1.t1.value);
+r=Math.round(a)
+document.f1.r1.value=r;
+}
+function sqrt()
+{
+b=parseFloat(document.f1.t2.value);
+s=Math.sqrt(b)
+document.f1.sq1.value=s;
+}
+function abs()
+{
+c=parseFloat(document.f1.t3.value);
+abs=Math.abs(c)
+document.f1.ab1.value=abs;
+}
+function cl()
+{
+d=parseFloat(document.f1.t4.value);
+cl=Math.ceil(d)
+document.f1.ceil.value=cl;
+}
+function fl()
+{
+d=parseFloat(document.f1.t5.value);
+flo=Math.floor(d)
+document.f1.floo.value=flo;
+}
+function ran()
+{
+
+rand=Math.random()
+document.f1.randd.value=rand;
+}
+ a=64;
+ c=8.7;
+ b=2;
+document.write("a="+a);
+document.write("<br>");
+document.write("b="+b);
+document.write("<br>");
+document.write("c="+c);
+document.write("<br>");
+document.write("The pi value is:"+Math.PI);
+document.write("<br>");
+document.write("The min value from a,b,c is:"+Math.min(64,2,8.7));
+document.write("<br>");
+document.write("The max value from a,b,c is:"+Math.max(64,2,8.7));
+document.write("<br>");
+
+</script>
+<body>
+<form name="f1">
+<table><tr>
+<td>The rounded value of</td><td><input type="text" name="t1" style="width:40px">is:</td>
+<td><input type="button" value="round" onClick="rnd()"><input type="number" name="r1" style="width:40px"></td></tr>
+<tr><td>The sqrt value of</td><td><input type="text" name="t2" style="width:40px">is:</td>
+<td><input type="button" value="sqrt" onClick="sqrt()"><input type="number" name="sq1" style="width:40px"></td></tr>
+<tr><td>The abs value of </td><td><input type="text" name="t3" style="width:40px">is:</td>
+<td><input type="button" value="abs" onClick="abs()"><input type="number" name="ab1" style="width:40px"></td></tr>
+<tr><td>The ceil value of </td><td><input type="text" name="t4" style="width:40px">is:</td>
+<td><input type="button" value="ceil" onClick="cl()"><input type="number" name="ceil" style="width:40px"></td></tr>
+<tr><td>The floor value of </td><td><input type="text" name="t5" style="width:40px">is:</td>
+<td><input type="button" value="floor" onClick="fl()"><input type="number" name="floo" style="width:40px"></td></tr>
+<tr><td>The random vlaue is </td><td>is:</td>
+<td><input type="button" value="random" onClick="ran()"><input type="number" name="randd" ></td></tr>
+</form>
+</body>
+</html>
