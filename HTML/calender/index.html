@@ -1,10 +1,12 @@
    <html>
     <title>Calender</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/> 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="home">
-      <form method="get" onsubmit="return getYear()">
+      <form method="POST" onsubmit="return getYear()">
         <h3>Enter Year To Display Calender</h3>
         <input type="number" id="yr" required autofocus />
         <button type="submit">Display</button>

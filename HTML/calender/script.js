@@ -2,8 +2,8 @@
 function genMonth(y,m,month){
     firstDay = (new Date(y, m)).getDay();
     lastday = new Date(y,m+1,0).getDate()
-    console.log(firstDay)
-console.log(lastday)
+    console.log("firstday:",firstDay)
+    console.log("last day:",lastday)
     mon = document.querySelector('#'+month)
     i=firstDay
     k=1
@@ -31,5 +31,6 @@ function dispCal(yr){
     months=["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"]
     for(a=0;a<12;++a){
         genMonth(yr,a,months[a])
+
     }
 }

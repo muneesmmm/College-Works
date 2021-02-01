@@ -1,0 +1,37 @@
+<html>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <center>
+        <button class="button" style="vertical-align:middle" onmouseover="image2(event)"
+            onmouseout="image1(event)">Event Handling</button>
+        <table style="width: 500px;" border="2">
+            <tr>
+                <th id="over"></th>
+                <th id="out"></th>
+            </tr>
+            <tr>
+                <td><img src="pic1" id="pic1" width="250px" height="250px"></td>
+                <td><img src="pic2" id="pic2" width="250px" height="250px"></td>
+            </tr>
+        </table>
+    </center>
+    <script>
+        function image1(event) {
+            var img = "banglore.jpg"
+            document.getElementById('pic2').src = img
+            // var event = event || window.event;
+            console.log(event.type);
+            document.getElementById("out").innerHTML = event.type;
+        }
+        function image2(event) {
+            var img1 = "chennai-central.jpg"
+            document.getElementById('pic1').src = img1
+            // var event = event || window.event;
+            console.log(event.type);
+            document.getElementById("over").innerHTML = event.type;
+        }
+    </script>
+</body>
+
+</html>
